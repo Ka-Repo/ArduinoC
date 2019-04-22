@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Hier liegen Texte (Sttings) die im Code verwendet werden.
+     Zufriff über @string/[name] -->
+<resources>
+    <string name="app_name">ArduinoC</string>
+    <string name="open">Öffnen</string>
+    <string name="close">schließen</string>
+</resources>

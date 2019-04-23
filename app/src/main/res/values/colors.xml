@@ -2,7 +2,8 @@
 <resources>
     <color name="colorPrimary">#1B191A</color> <!-- Farbe der App-Leiste -->
     <color name="colorPrimaryDark">#1B191A</color> <!-- Farbe der Statusleiste über der App-Leiste -->
-    <color name="colorAccent">#1B191A</color> <!-- Farbe von Button bzw. Kontrollelementen -->
+    <color name="colorAccent">#FFFFFF</color> <!-- Farbe von Button bzw. Kontrollelementen -->
+    <color name="colorSecondary">#FFFFFF</color>
 
     <color name="appBackgroundColor">#1B191A</color>
     <color name="white">#FFFFFF</color>

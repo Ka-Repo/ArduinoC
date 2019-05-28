@@ -6,4 +6,5 @@
     <string name="app_name">ArduinoC</string>
     <string name="open">Öffnen</string>
     <string name="close">schließen</string>
+    <string name="findArduino">Bluetooth Geraet gefunden</string>
 </resources>

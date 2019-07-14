@@ -8,15 +8,18 @@ import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
 
+
+/**
+ * Das ist die Startseite der App.
+ * Sie beinhaltet einen farbigen Hintergrund und eine Navigationsleiste.
+ * Sie bietet eine Schnittstelle zum Aufrufen von neuen Aktivities (@onNavigationItemSelected).
+ */
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
     private DrawerLayout mDrawerLayout;
     private ActionBarDrawerToggle mToggle;
-    private MenuItem item;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,6 +28,9 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
         NavigationView mNavigationView = findViewById(R.id.navgigation_bar_id);
 
+        /**
+         * Menuleiste erhält einen Listener um auf Klicks zu reagieren
+         */
         if (mNavigationView != null) {
             mNavigationView.setNavigationItemSelectedListener(this);
         }

@@ -20,13 +20,14 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
     private DrawerLayout mDrawerLayout;
     private ActionBarDrawerToggle mToggle;
+    private NavigationView mNavigationView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_main); // Laden der Benutzeroberfläche
 
-        NavigationView mNavigationView = findViewById(R.id.navgigation_bar_id);
+        mNavigationView = findViewById(R.id.navgigation_bar_id);
 
         /**
          * Menuleiste erhält einen Listener um auf Klicks zu reagieren

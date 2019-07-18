@@ -3,19 +3,19 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item android:id="@+id/bluetooth"
-        android:title="Find my Arduino"
+        android:title="@string/find"
         android:icon="@drawable/ic_bluetooth"
         android:iconTint="@color/white">
     </item>
 
     <item android:id="@+id/control"
-        android:title="control Arduino"
+        android:title="@string/control"
         android:icon="@drawable/ic_control"
         android:iconTint="@color/white">
     </item>
 
     <item android:id="@+id/camera"
-        android:title="show Arduino camera"
+        android:title="@string/show"
         android:icon="@drawable/ic_camera"
         android:iconTint="@color/white">
     </item>

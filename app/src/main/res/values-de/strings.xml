@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Hier liegen Texte (Strings) die im Code verwendet werden.
+     Dies ist die deutsche Übersetzung -->
+<resources>
+    <string name="app_name">ArduinoC</string>
+    <string name="open">Öffnen</string>
+    <string name="close">schließen</string>
+    <string name="findArduino">Bluetooth Geraet gefunden</string>
+
+    <!-- Navigationbar -->
+    <string name="find">finde meinen Arduino</string>
+    <string name="control">steuere Arduino</string>
+    <string name="show">zeige Arduino Kamera</string>
+</resources>

@@ -18,10 +18,12 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
-
+    /**
+     * Benötigt man für Java-8-Sprachfeatures wie Lambda-Ausdrücke ->
+     */
     compileOptions {
-        targetCompatibility JavaVersion.VERSION_1_8
-        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.current()
+        sourceCompatibility JavaVersion.current()
     }
 }
 

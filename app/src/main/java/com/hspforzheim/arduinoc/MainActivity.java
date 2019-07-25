@@ -24,8 +24,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main); // Laden der Benutzeroberfläche
+        super.onCreate(savedInstanceState);             // Aufruf der Implementierung der Elternklasse
+        setContentView(R.layout.activity_main);         // Laden der Benutzeroberfläche
 
         mNavigationView = findViewById(R.id.navgigation_bar_id);
 
@@ -74,6 +74,9 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             case R.id.bluetooth:
                 Intent i = new Intent(MainActivity.this, findArduino.class);
                 startActivity(i);
+                break;
+            case R.id.control:
+                startActivity(new Intent(MainActivity.this, controlArduino.class));
                 break;
 
             default:

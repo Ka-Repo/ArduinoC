@@ -11,6 +11,7 @@ android {
         versionCode 1                      // Version der App für Code
         versionName "1.0"                  // Version der App für Anwender
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        vectorDrawables.useSupportLibrary = true
     }
     buildTypes {
         release {

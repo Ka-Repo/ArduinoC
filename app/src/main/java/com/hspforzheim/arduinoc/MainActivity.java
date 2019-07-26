@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         /**
         Ab hier wird die Menuleiste definiert.
         Wenn möglich auslagern aus onCreate.
-         **/
+         */
         mDrawerLayout = findViewById(R.id.drawer_layout);
         mToggle = new ActionBarDrawerToggle(this, mDrawerLayout, R.string.open, R.string.close);
 

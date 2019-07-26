@@ -25,26 +25,26 @@ public class controlArduino extends AppCompatActivity implements NavigationView.
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_control);
 
-/*        mNavigationView = findViewById(R.id.navgigation_bar_id);
+        mNavigationView = findViewById(R.id.navgigation_bar_control);
 
-        *//**
+        /*
          * Menuleiste erhält einen Listener um auf Klicks zu reagieren
-         *//*
+        */
         if (mNavigationView != null) {
             mNavigationView.setNavigationItemSelectedListener(this);
         }
 
-        *//**
+        /*
          Ab hier wird die Menuleiste definiert.
          Wenn möglich auslagern aus onCreate.
-         **//*
-        mDrawerLayout = findViewById(R.id.drawer_layout);
+         */
+        mDrawerLayout = findViewById(R.id.control_layout);
         mToggle = new ActionBarDrawerToggle(this, mDrawerLayout, R.string.open, R.string.close);
 
         mDrawerLayout.addDrawerListener(mToggle);
         mToggle.syncState();
 
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);*/
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
     }
 

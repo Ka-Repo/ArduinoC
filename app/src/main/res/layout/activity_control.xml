@@ -37,7 +37,7 @@
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         app:menu="@menu/navigation_bar"
-        android:id="@+id/navgigation_bar_id"
+        android:id="@+id/navgigation_bar_control"
         android:layout_gravity="start"
         android:background="@color/appBackgroundColor"
         app:itemTextColor="@color/white">

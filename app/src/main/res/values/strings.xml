@@ -2,16 +2,17 @@
 
 <!-- Hier liegen Texte (Strings) die im Code verwendet werden.
      Zugriff über @string/[name]
-     Die gleiche Datei ist auch in deutsch vorhanden. -->
+     Die gleiche Datei ist auch in Deutsch vorhanden. -->
 
 <resources>
-<string name="app_name">ArduinoC</string>
-<string name="open">open</string>
-<string name="close">close</string>
-<string name="findArduino">Bluetooth device found</string>
+    <string name="app_name">ArduinoC</string>
+    <string name="open">open</string>
+    <string name="close">close</string>
+    <string name="findArduino">Bluetooth device found</string>
+    <string name="search">Searching for Bluetooth devices. Please wait.</string>
 
-<!-- Navigation bar -->
-<string name="find">find my Arduino</string>
-<string name="control">control Arduino</string>
-<string name="show">show Arduino camera</string>
+    <!-- Navigation bar -->
+    <string name="find">find my Arduino</string>
+    <string name="control">control Arduino</string>
+    <string name="show">show Arduino camera</string>
 </resources>

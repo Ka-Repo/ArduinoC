@@ -6,9 +6,12 @@
     <!--
     Hier werden die Bestandteile der App aufgelistet.
     - icon entspricht App-Symbol
-    - label enspricht App-Name
-    - intent-filter enspricht Hauptaktivität
-    - activity enspricht einer Seite der App
+    - label entspricht App-Name
+    - intent-filter entspricht Hauptaktivität
+    - activity entspricht einer Seite der App
+    - action.MAIN definiert die Aktivity als den Haupteinstiegspunkt
+    - category.LAUNCHER zeigt die Anwendung im Programmstarter an
+    Hier werden ebenfalls Berechtigungen vermerkt.
     -->
     <application
         android:allowBackup="true"
@@ -17,10 +20,10 @@
         android:roundIcon="@mipmap/ic_launcher_round_new"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
+
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

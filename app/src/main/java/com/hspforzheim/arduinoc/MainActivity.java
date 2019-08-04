@@ -15,6 +15,8 @@ import android.view.MenuItem;
  * Das ist die Startseite der App.
  * Sie beinhaltet einen farbigen Hintergrund und eine Navigationsleiste.
  * Sie bietet eine Schnittstelle zum Aufrufen von neuen Aktivities (@onNavigationItemSelected).
+ *
+ * AppCompatActivity leitet von android.app.Activity ab und ist Teil der Support Library.
  */
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 

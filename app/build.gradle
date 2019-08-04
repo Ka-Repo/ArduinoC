@@ -8,8 +8,8 @@ android {
         applicationId "com.hspforzheim.arduinoc"
         minSdkVersion 15                   // Älteste Android-Version auf der die App läuft
         targetSdkVersion 28                // Optimierte/Ziel Android-Version
-        versionCode 1                      // Version der App für Code
-        versionName "1.0"                  // Version der App für Anwender
+        versionCode 1                      // Versionsnummer der App für Code
+        versionName "1.0"                  // Versionsnummer der App für Anwender
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         // vectorDrawables.useSupportLibrary = true
     }

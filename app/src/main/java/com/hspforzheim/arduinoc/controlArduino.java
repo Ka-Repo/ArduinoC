@@ -9,6 +9,7 @@ import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.widget.Button;
 
 
 /**
@@ -19,6 +20,7 @@ public class controlArduino extends AppCompatActivity implements NavigationView.
     private DrawerLayout mDrawerLayout;
     private ActionBarDrawerToggle mToggle;
     private NavigationView mNavigationView;
+    private Button left, right, up, down;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,15 +28,19 @@ public class controlArduino extends AppCompatActivity implements NavigationView.
         setContentView(R.layout.activity_control);
 
         mNavigationView = findViewById(R.id.navgigation_bar_control);
+        left = findViewById(R.id.left);
+        right = findViewById(R.id.right);
+        up = findViewById(R.id.up);
+        down = findViewById(R.id.down);
 
-        /*
+        /**
          * Menuleiste erhält einen Listener um auf Klicks zu reagieren
         */
         if (mNavigationView != null) {
             mNavigationView.setNavigationItemSelectedListener(this);
         }
 
-        /*
+        /**
          Ab hier wird die Menuleiste definiert.
          Wenn möglich auslagern aus onCreate.
          */
@@ -45,6 +51,10 @@ public class controlArduino extends AppCompatActivity implements NavigationView.
         mToggle.syncState();
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
+        left.setOnClickListener(v -> {
+            finish();
+        });
 
     }
 
@@ -76,7 +86,8 @@ public class controlArduino extends AppCompatActivity implements NavigationView.
                 break;
             case R.id.control:
                 break;
-
+            case R.id.camera:
+                break;
             default:
                 break;
         }

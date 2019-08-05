@@ -15,4 +15,9 @@
     <string name="find">find my Arduino</string>
     <string name="control">control Arduino</string>
     <string name="show">show Arduino camera</string>
+
+    <!-- Bluetooth -->
+    <string name="paired">paired devices\n</string>
+    <string name="others">devices within reach\n</string>
+    <string name="template">\t%1$s (%2$s)\n</string>
 </resources>

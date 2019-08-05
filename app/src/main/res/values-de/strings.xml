@@ -15,4 +15,9 @@
     <string name="find">finde meinen Arduino</string>
     <string name="control">steuere Arduino</string>
     <string name="show">zeige Arduino Kamera</string>
+
+    <!-- Bluetooth -->
+    <string name="paired">Gekoppelte Geräte\n</string>
+    <string name="others">Geräte in Reichweite\n</string>
+    <string name="template">\t%1$s (%2$s)\n</string>
 </resources>

@@ -21,6 +21,7 @@ public class controlArduino extends AppCompatActivity implements NavigationView.
     private ActionBarDrawerToggle mToggle;
     private NavigationView mNavigationView;
     private Button left, right, up, down;
+    private static final findArduino sendingInstance = new findArduino();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -53,8 +54,25 @@ public class controlArduino extends AppCompatActivity implements NavigationView.
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         left.setOnClickListener(v -> {
-            finish();
+            sendingInstance.sendByte(1);
+            //finish();
         });
+
+        right.setOnClickListener(v -> {
+            sendingInstance.sendByte(2);
+            //finish();
+        });
+
+        up.setOnClickListener(v -> {
+            sendingInstance.sendByte(3);
+            //finish();
+        });
+
+        up.setOnClickListener(v -> {
+            sendingInstance.sendByte(4);
+            //finish();
+        });
+
 
     }
 

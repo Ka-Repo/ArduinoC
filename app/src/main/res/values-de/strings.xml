@@ -20,4 +20,9 @@
     <string name="paired">Gekoppelte Geräte\n</string>
     <string name="others">Geräte in Reichweite\n</string>
     <string name="template">\t%1$s (%2$s)\n</string>
+
+    <string name="MAC">00:11:12:14:00:35</string>
+    <string name="connect">verbinden</string>
+    <string name="disconnect">trennen</string>
+    <string name="UUID_REQUEST">Zugriff auf die Telefon-ID has not been granted. Action aborted.</string>
 </resources>

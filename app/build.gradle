@@ -6,7 +6,7 @@ android {
     compileSdkVersion 28                    // Version unter der die App compiliert wurde
     defaultConfig {
         applicationId "com.hspforzheim.arduinoc"
-        minSdkVersion 15                   // Älteste Android-Version auf der die App läuft
+        minSdkVersion 19                   // Älteste Android-Version auf der die App läuft
         targetSdkVersion 28                // Optimierte/Ziel Android-Version
         versionCode 1                      // Versionsnummer der App für Code
         versionName "1.0"                  // Versionsnummer der App für Anwender
@@ -26,6 +26,8 @@ android {
         targetCompatibility JavaVersion.current()
         sourceCompatibility JavaVersion.current()
     }
+
+
 }
 
 dependencies {
@@ -36,4 +38,6 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    implementation 'io.github.controlwear:virtualjoystick:0.9.9'
+
 }

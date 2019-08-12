@@ -11,6 +11,110 @@
     tools:context=".findArduino"
     android:background="@color/appBackgroundColor">
 
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/scroller">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/linearLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textColor="@color/white" />
+
+            <EditText
+                android:id="@+id/text_adresse"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/MAC"
+                android:textColor="@color/white_trans"
+                android:textColorHint="@color/white"></EditText>
+
+            <Button
+                android:id="@+id/connect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="verbinden"
+                android:text="@string/connect" />
+
+            <Button
+                android:id="@+id/bt_disconnect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="trennen"
+                android:text="@string/disconnect" />
+
+            <Button
+                android:id="@+id/right1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="right" />
+
+            <Button
+                android:id="@+id/left1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="left" />
+
+            <Button
+                android:id="@+id/up1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="up" />
+
+
+            <Button
+                android:id="@+id/down1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="down" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <io.github.controlwear.virtual.joystick.android.JoystickView xmlns:custom="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/joystickView"
+                    android:layout_width="338dp"
+                    android:layout_height="292dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="false"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginStart="51dp"
+                    android:layout_marginLeft="51dp"
+                    android:layout_marginTop="46dp"
+                    android:layout_marginEnd="52dp"
+                    android:layout_marginRight="22dp"
+                    android:layout_marginBottom="2180dp"
+                    custom:JV_backgroundColor="#FFFFFF"
+                    custom:JV_borderColor="#FFFFFF"
+                    custom:JV_borderWidth="4dp"
+                    custom:JV_buttonColor="#000000"
+                    custom:layout_constraintBottom_toBottomOf="parent"
+                    custom:layout_constraintEnd_toEndOf="parent"
+                    custom:layout_constraintHorizontal_bias="1.0"
+                    custom:layout_constraintStart_toStartOf="parent"
+                    custom:layout_constraintTop_toTopOf="parent"
+                    custom:layout_constraintVertical_bias="1.0" />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+        </ScrollView>
+
     <android.support.design.widget.NavigationView
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
@@ -20,13 +124,5 @@
         android:background="@color/appBackgroundColor"
         app:itemTextColor="@color/white">
     </android.support.design.widget.NavigationView>
-
-    <TextView
-        android:id="@+id/tv"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:textColor="@color/white"
-        android:padding="10dp"/>
-
 
 </android.support.v4.widget.DrawerLayout>

@@ -20,4 +20,11 @@
     <string name="paired">paired devices\n</string>
     <string name="others">devices within reach\n</string>
     <string name="template">\t%1$s (%2$s)\n</string>
+
+    <string name="MAC">00:11:12:14:00:35</string>
+    <string name="connect">connect</string>
+    <string name="disconnect">disconnect</string>
+
+    <string name="UUID_REQUEST">Access to Telephone-ID wurde nicht gewehrt. Prozess abgebrochen.</string>
+
 </resources>

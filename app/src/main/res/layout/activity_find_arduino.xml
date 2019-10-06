@@ -11,11 +11,11 @@
     tools:context=".findArduino"
     android:background="@color/appBackgroundColor">
 
-
+<!--
     <ScrollView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/scroller">
+        android:id="@+id/scroller">-->
 
         <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
             android:id="@+id/linearLayout"
@@ -53,7 +53,7 @@
                 android:onClick="trennen"
                 android:text="@string/disconnect" />
 
-            <Button
+<!--            <Button
                 android:id="@+id/right1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -76,7 +76,7 @@
                 android:id="@+id/down1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="down" />
+                android:text="down" />-->
 
             <RelativeLayout
                 android:layout_width="wrap_content"
@@ -84,19 +84,19 @@
 
                 <io.github.controlwear.virtual.joystick.android.JoystickView xmlns:custom="http://schemas.android.com/apk/res-auto"
                     android:id="@+id/joystickView"
-                    android:layout_width="338dp"
-                    android:layout_height="292dp"
+                    android:layout_width="301dp"
+                    android:layout_height="265dp"
                     android:layout_alignParentStart="true"
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentTop="true"
                     android:layout_alignParentRight="true"
                     android:layout_alignParentBottom="false"
                     android:layout_gravity="center_horizontal"
-                    android:layout_marginStart="51dp"
-                    android:layout_marginLeft="51dp"
-                    android:layout_marginTop="46dp"
+                    android:layout_marginStart="52dp"
+                    android:layout_marginLeft="52dp"
+                    android:layout_marginTop="2dp"
                     android:layout_marginEnd="52dp"
-                    android:layout_marginRight="22dp"
+                    android:layout_marginRight="57dp"
                     android:layout_marginBottom="2180dp"
                     custom:JV_backgroundColor="#FFFFFF"
                     custom:JV_borderColor="#FFFFFF"
@@ -113,7 +113,7 @@
 
 
         </LinearLayout>
-        </ScrollView>
+        <!--</ScrollView>-->
 
     <android.support.design.widget.NavigationView
         android:layout_width="wrap_content"

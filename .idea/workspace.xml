@@ -4,7 +4,7 @@
     <filters>
       <filter>
         <option name="logLevel" value="verbose" />
-        <option name="logMessagePattern" value="trenne" />
+        <option name="logMessagePattern" value="System.out" />
         <option name="logTagPattern" value="" />
         <option name="name" value="Unnamed-0" />
         <option name="packageNamePattern" value="" />
@@ -18,7 +18,7 @@
     </shared>
   </component>
   <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_LOG_LEVEL" value="verbose" />
+    <option name="TOOL_WINDOW_LOG_LEVEL" value="debug" />
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="AvailableLibraryUpdateStorage">
@@ -67,28 +67,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f985b6ec-40ec-4647-b270-d304aeef12d5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__io_github_controlwear_virtualjoystick_0_9_9_aar.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.1.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.1.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.1.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1.1/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.1.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1.1/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.1.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1.1/javaCompile/classAnalysis.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.1.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1.1/javaCompile/javaCompile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.1.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1.1/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/caches/gradle_models.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/gradle_models.ser" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/app/app.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/hspforzheim/arduinoc/controlArduino.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/hspforzheim/arduinoc/controlArduino.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/hspforzheim/arduinoc/findArduino.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/hspforzheim/arduinoc/findArduino.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_find_arduino.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_find_arduino.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values-de/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values-de/strings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -143,14 +133,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/hspforzheim/arduinoc/controlArduino.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/hspforzheim/arduinoc/findArduino.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1088">
-              <caret line="73" column="11" selection-start-line="73" selection-start-column="11" selection-end-line="73" selection-end-column="11" />
+            <state relative-caret-position="357">
+              <caret line="321" column="83" selection-start-line="321" selection-start-column="83" selection-end-line="321" selection-end-column="83" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#3844#3865#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="459">
+              <caret line="27" column="18" selection-start-line="27" selection-start-column="18" selection-end-line="27" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -159,31 +159,29 @@
         <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
           <provider editor-type-id="android-manifest" />
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="74" selection-start-line="8" selection-start-column="74" selection-end-line="8" selection-end-column="74" />
+            <state relative-caret-position="102">
+              <caret line="6" column="73" selection-start-line="6" selection-start-column="73" selection-end-line="6" selection-end-column="73" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_control.xml">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/navigation_bar.xml">
           <provider editor-type-id="android-designer2" />
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1513">
-              <caret line="89" column="49" selection-start-line="89" selection-start-column="49" selection-end-line="89" selection-end-column="49" />
+            <state>
+              <caret column="1" selection-start-column="1" selection-end-column="1" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/hspforzheim/arduinoc/findArduino.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.github.controlwear/virtualjoystick/0.9.9/302e71014fe6ab7f047b2046cb25ef21aab18795/virtualjoystick-0.9.9-sources.jar!/io/github/controlwear/virtual/joystick/android/JoystickView.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="184" column="43" lean-forward="true" selection-start-line="184" selection-start-column="43" selection-end-line="184" selection-end-column="43" />
+            <state relative-caret-position="7599">
+              <caret line="480" column="9" selection-start-line="467" selection-start-column="8" selection-end-line="480" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#6484#6485#0" expanded="true" />
-                <element signature="e#6535#6536#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -191,19 +189,28 @@
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_find_arduino.xml">
-          <provider selected="true" editor-type-id="android-designer2" />
-          <provider editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="33" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="33" />
+          <provider editor-type-id="android-designer2" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="274">
+              <caret line="113" lean-forward="true" selection-start-line="113" selection-end-line="113" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/build.gradle">
+        <entry file="file://$USER_HOME$/AppData/Local/Android/Sdk/sources/android-28/android/view/View.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="680">
-              <caret line="40" column="64" selection-start-line="40" selection-start-column="64" selection-end-line="40" selection-end-column="64" />
+            <state relative-caret-position="276828">
+              <caret line="16693" column="14" selection-start-line="16693" selection-start-column="14" selection-end-line="16693" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/AppData/Local/Android/Sdk/sources/android-28/java/io/OutputStream.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="73" selection-start-line="73" selection-end-line="75" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -224,8 +231,8 @@
       <list>
         <option value="resourceFile" />
         <option value="layoutResourceFile" />
-        <option value="Class" />
         <option value="valueResourceFile" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -234,6 +241,8 @@
       <find>paired</find>
       <find>LOG</find>
       <find>setD</find>
+      <find>phone_state</find>
+      <find>system.</find>
     </findStrings>
     <replaceStrings>
       <replace>LOG</replace>
@@ -260,12 +269,14 @@
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_control.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/hspforzheim/arduinoc/MainActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/colors.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/values-de/strings.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/hspforzheim/arduinoc/controlArduino.java" />
         <option value="$PROJECT_DIR$/app/build.gradle" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/hspforzheim/arduinoc/d" />
+        <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_find_arduino.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/hspforzheim/arduinoc/Utils.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/hspforzheim/arduinoc/findArduino.java" />
       </list>
     </option>
@@ -274,7 +285,7 @@
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1936" />
-    <option name="height" value="1056" />
+    <option name="height" value="1096" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -283,6 +294,7 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
+      <pane id="ProjectPane" />
       <pane id="Scope">
         <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
           <expand>
@@ -381,6 +393,22 @@
             <path>
               <item name="ArduinoC" type="1abcf292:AndroidViewProjectNode" />
               <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="manifests" type="f94875db:AndroidManifestsGroupNode" />
+            </path>
+            <path>
+              <item name="ArduinoC" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+            </path>
+            <path>
+              <item name="ArduinoC" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="arduinoc" type="cbb59c9e:AndroidPsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ArduinoC" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
               <item name="res" type="d4f16f75:AndroidResFolderNode" />
             </path>
             <path>
@@ -397,7 +425,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="ProjectPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -525,9 +552,10 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
-      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.1748401" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.1748401" />
       <window_info id="Structure" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Build Variants" order="4" side_tool="true" />
@@ -535,24 +563,24 @@
       <window_info id="Designer" order="6" />
       <window_info id="Resources Explorer" order="7" weight="0.32995737" />
       <window_info id="Capture Tool" order="8" />
-      <window_info anchor="bottom" id="Run" order="0" sideWeight="0.6945629" weight="0.14517877" />
-      <window_info anchor="bottom" id="Logcat" order="1" sideWeight="0.93070364" weight="0.9674973" />
-      <window_info anchor="bottom" id="TODO" order="2" sideWeight="0.4978678" weight="0.32936078" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4989339" weight="0.32936078" />
-      <window_info anchor="bottom" id="Terminal" order="4" sideWeight="0.49840087" weight="0.32936078" />
-      <window_info anchor="bottom" id="Event Log" order="5" sideWeight="0.37260127" side_tool="true" weight="0.3716143" />
-      <window_info anchor="bottom" id="Version Control" order="6" sideWeight="0.4989339" weight="0.32936078" />
-      <window_info anchor="bottom" id="Build" order="7" sideWeight="0.6273987" weight="0.2156013" />
-      <window_info anchor="bottom" id="Android Profiler" order="8" />
-      <window_info anchor="bottom" id="Find" order="9" sideWeight="0.4989339" weight="0.3261105" />
-      <window_info anchor="right" id="Device File Explorer" order="0" side_tool="true" />
-      <window_info anchor="right" id="Capture Analysis" order="1" />
-      <window_info anchor="right" id="Gradle" order="2" weight="0.32995737" />
-      <window_info anchor="right" id="Theme Preview" order="3" />
-      <window_info anchor="right" id="Preview" order="4" />
-      <window_info anchor="right" id="StringPreview" order="5" />
-      <window_info anchor="right" id="Palette&#9;" order="6" />
-      <window_info anchor="right" id="Assistant" order="7" weight="0.32995737" />
+      <window_info anchor="bottom" id="Run" order="0" sideWeight="0.6492537" weight="0.14517877" />
+      <window_info anchor="bottom" id="Logcat" order="1" sideWeight="0.923774" visible="true" weight="0.25568798" />
+      <window_info anchor="bottom" id="Debug" order="2" sideWeight="0.4989339" weight="0.32936078" />
+      <window_info anchor="bottom" id="Terminal" order="3" sideWeight="0.4968017" weight="0.32936078" />
+      <window_info anchor="bottom" id="Event Log" order="4" sideWeight="0.07622601" side_tool="true" weight="0.23726977" />
+      <window_info anchor="bottom" id="Version Control" order="5" sideWeight="0.49733475" weight="0.32936078" />
+      <window_info anchor="bottom" id="Build" order="6" sideWeight="0.65191895" weight="0.24485373" />
+      <window_info anchor="bottom" id="Android Profiler" order="7" sideWeight="0.49946696" weight="0.32936078" />
+      <window_info anchor="bottom" id="Find" order="8" sideWeight="0.49840087" weight="0.3261105" />
+      <window_info anchor="bottom" id="TODO" order="9" sideWeight="0.49573562" weight="0.32936078" />
+      <window_info anchor="right" id="Capture Analysis" order="0" />
+      <window_info anchor="right" id="Gradle" order="1" weight="0.32995737" />
+      <window_info anchor="right" id="Theme Preview" order="2" />
+      <window_info anchor="right" id="Preview" order="3" />
+      <window_info anchor="right" id="StringPreview" order="4" />
+      <window_info anchor="right" id="Palette&#9;" order="5" />
+      <window_info anchor="right" id="Assistant" order="6" weight="0.32995737" />
+      <window_info anchor="right" id="Device File Explorer" order="7" side_tool="true" weight="0.32995737" />
     </layout>
     <layout-to-restore>
       <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
@@ -585,30 +613,6 @@
     </layout-to-restore>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/AppData/Local/Android/Sdk/sources/android-28/android/util/SparseArray.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="302" selection-start-line="302" selection-end-line="302" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Android/Sdk/sources/android-28/android/app/FragmentManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="2998" selection-start-line="2998" selection-end-line="2998" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Android/Sdk/sources/android-28/android/os/Process.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="9248">
-          <caret line="575" selection-start-line="575" selection-end-line="575" />
-          <folding>
-            <element signature="e#18686#18687#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Android/Sdk/sources/android-28/android/system/Os.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3808">
@@ -722,13 +726,7 @@
     <entry file="file://$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_launcher_round_new.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_launcher_new.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/ic_launcher_round_new.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_launcher_new.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/mipmap-anydpi-v26/ic_launcher_new.xml">
@@ -740,17 +738,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round_new.xml">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/navigation_bar.xml">
-      <provider editor-type-id="android-designer2" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
-          <folding>
-            <element signature="e#513#527#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/hspforzheim/arduinoc/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -790,52 +777,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="24" column="43" lean-forward="true" selection-start-line="24" selection-start-column="43" selection-end-line="24" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.github.controlwear/virtualjoystick/0.9.9/302e71014fe6ab7f047b2046cb25ef21aab18795/virtualjoystick-0.9.9-sources.jar!/io/github/controlwear/virtual/joystick/android/JoystickView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
-          <caret line="37" column="5" lean-forward="true" selection-start-line="37" selection-start-column="5" selection-end-line="37" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/hspforzheim/arduinoc/controlArduino.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1088">
-          <caret line="73" column="11" selection-start-line="73" selection-start-column="11" selection-end-line="73" selection-end-column="11" />
+        <state relative-caret-position="1241">
+          <caret line="82" column="30" selection-start-line="82" selection-start-column="30" selection-end-line="82" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
-      <provider editor-type-id="android-manifest" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="74" selection-start-line="8" selection-start-column="74" selection-end-line="8" selection-end-column="74" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_control.xml">
-      <provider editor-type-id="android-designer2" />
-      <provider selected="true" editor-type-id="text-editor">
+      <provider selected="true" editor-type-id="android-designer2" />
+      <provider editor-type-id="text-editor">
         <state relative-caret-position="1513">
           <caret line="89" column="49" selection-start-line="89" selection-start-column="49" selection-end-line="89" selection-end-column="49" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Android/Sdk/sources/android-28/java/io/OutputStream.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="61" column="25" selection-start-line="61" selection-start-column="25" selection-end-line="61" selection-end-column="25" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_launcher_new.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_launcher_new.png">
+      <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
@@ -851,22 +815,74 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_find_arduino.xml">
-      <provider selected="true" editor-type-id="android-designer2" />
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="33" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="33" />
+    <entry file="file://$USER_HOME$/AppData/Local/Android/Sdk/sources/android-28/java/io/OutputStream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="73" selection-start-line="73" selection-end-line="75" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/hspforzheim/arduinoc/findArduino.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/hspforzheim/arduinoc/d">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+      <provider editor-type-id="android-manifest" />
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="184" column="43" lean-forward="true" selection-start-line="184" selection-start-column="43" selection-end-line="184" selection-end-column="43" />
+        <state relative-caret-position="102">
+          <caret line="6" column="73" selection-start-line="6" selection-start-column="73" selection-end-line="6" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" column="18" selection-start-line="27" selection-start-column="18" selection-end-line="27" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/navigation_bar.xml">
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="1" selection-start-column="1" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Android/Sdk/sources/android-28/android/view/View.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276828">
+          <caret line="16693" column="14" selection-start-line="16693" selection-start-column="14" selection-end-line="16693" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.github.controlwear/virtualjoystick/0.9.9/302e71014fe6ab7f047b2046cb25ef21aab18795/virtualjoystick-0.9.9-sources.jar!/io/github/controlwear/virtual/joystick/android/JoystickView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7599">
+          <caret line="480" column="9" selection-start-line="467" selection-start-column="8" selection-end-line="480" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#6484#6485#0" expanded="true" />
-            <element signature="e#6535#6536#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_find_arduino.xml">
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="274">
+          <caret line="113" lean-forward="true" selection-start-line="113" selection-end-line="113" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/hspforzheim/arduinoc/Utils.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/hspforzheim/arduinoc/findArduino.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="321" column="83" selection-start-line="321" selection-start-column="83" selection-end-line="321" selection-end-column="83" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3844#3865#0" expanded="true" />
           </folding>
         </state>
       </provider>

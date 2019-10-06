@@ -10,7 +10,6 @@ import android.content.Intent;
 import android.content.IntentFilter;
 import android.content.pm.PackageManager;
 import android.graphics.Color;
-import android.graphics.Paint;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
@@ -22,14 +21,11 @@ import android.support.v7.app.AppCompatActivity;
 import android.telephony.TelephonyManager;
 import android.util.Log;
 import android.view.MenuItem;
-import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ScrollView;
 import android.widget.TextView;
 import android.widget.Toast;
-
 import java.io.IOException;
 import java.io.OutputStream;
 import java.util.Set;
@@ -54,6 +50,7 @@ public class findArduino extends AppCompatActivity implements NavigationView.OnN
 
     private BluetoothAdapter adapter;
     private TextView tv;
+    private TextView enter_mac;
     private boolean started;
     private Button connect;
     private Button disconnect;
@@ -65,6 +62,7 @@ public class findArduino extends AppCompatActivity implements NavigationView.OnN
     private static final java.util.UUID MY_UUID = UUID.fromString("00001101-0000-1000-8000-00805F9B34FB");
     private static OutputStream stream_out = null;
 
+    // import android.content.BroadcastReceiver;
 
     /**
      * Registrieren eines Bluetooth-Receiver
@@ -86,6 +84,7 @@ public class findArduino extends AppCompatActivity implements NavigationView.OnN
         setContentView(R.layout.activity_find_arduino);
 
         mNavigationView = findViewById(R.id.navgigation_bar_find);
+        enter_mac = findViewById(R.id.text_adresse);
         tv = findViewById(R.id.tv);
 
         /**
@@ -140,7 +139,7 @@ public class findArduino extends AppCompatActivity implements NavigationView.OnN
          * On-Click-Listener zu Testzwecken des Sendens von Daten
          */
 
-        Button right = findViewById(R.id.right1);
+/*        Button right = findViewById(R.id.right1);
         Button left = findViewById(R.id.left1);
         Button up = findViewById(R.id.up1);
         Button down = findViewById(R.id.down1);
@@ -163,37 +162,192 @@ public class findArduino extends AppCompatActivity implements NavigationView.OnN
         down.setOnClickListener(v -> {
             sendByte(4);
             //finish();
-        });
+        });*/
 
         JoystickView joystick = (JoystickView) findViewById(R.id.joystickView);
-        ScrollView scroller = new ScrollView(this);
-        scroller.findViewById(R.id.scroller);
+/*        ScrollView scroller = new ScrollView(this);
+        scroller.findViewById(R.id.scroller);*/
 
         joystick.setOnMoveListener(new JoystickView.OnMoveListener() {
             @Override
             public void onMove(int angle, int strength) {
                 if (is_connected) {
-                    Log.d(TAG, "Sende Nachricht: "  + angle + " " + strength);
-                    try {
-                        stream_out.write(angle + strength);
-                    } catch (IOException e) {
-                        Log.e(TAG,
-                                "Bluetest: Exception beim Senden: " + e.toString());
-                    }
-                }
 
-                scroller.setEnabled(false);
+/*                    if(String.valueOf(angle).length() < 3 || String.valueOf(strength).length() < 3) {
+
+                        if(String.valueOf(angle).length() == 2 && String.valueOf(strength).length() == 3) {
+                            Log.d(TAG, "Sende Nachricht: " + 0 + angle + " " + strength);
+                            try {
+                                int data = Integer.valueOf(String.valueOf(angle) + strength);
+                                stream_out.write(angle);
+                                stream_out.write(strength);
+                                System.out.println(angle);
+                            } catch (IOException e) {
+                                Log.e(TAG,
+                                        "Bluetest: Exception beim Senden: " + e.toString());
+                            }
+                        }
+
+                        if(String.valueOf(angle).length() == 2 && String.valueOf(strength).length() == 2) {
+                            Log.d(TAG, "Sende Nachricht: " + 0 + angle + " " + 0 + strength);
+                            try {
+                                int data = Integer.valueOf(String.valueOf(angle) + 0 + strength);
+                                stream_out.write(angle);
+                                stream_out.write(strength);
+                                System.out.println(angle);
+                            } catch (IOException e) {
+                                Log.e(TAG,
+                                        "Bluetest: Exception beim Senden: " + e.toString());
+                            }
+                        }
+
+                        if(String.valueOf(angle).length() == 1 && String.valueOf(strength).length() == 1) {
+                            Log.d(TAG, "Sende Nachricht: " + 0 + 0 + angle + " " + 0 + 0 + strength);
+                            try {
+                                int data = Integer.valueOf(String.valueOf(angle) + 0 + 0 + strength);
+                                stream_out.write(angle);
+                                stream_out.write(strength);
+                                System.out.println(angle);
+                            } catch (IOException e) {
+                                Log.e(TAG,
+                                        "Bluetest: Exception beim Senden: " + e.toString());
+                            }
+                        }
+
+                        if(String.valueOf(angle).length() == 3 && String.valueOf(strength).length() == 2) {
+                            Log.d(TAG, "Sende Nachricht: " + angle + " " + 0 + strength);
+                            try {
+                                int data = Integer.valueOf(String.valueOf(angle) + 0 + strength);
+                                stream_out.write(angle);
+                                stream_out.write(strength);
+                                System.out.println(angle);
+                            } catch (IOException e) {
+                                Log.e(TAG,
+                                        "Bluetest: Exception beim Senden: " + e.toString());
+                            }
+                        }
+
+                        if(String.valueOf(angle).length() == 1 && String.valueOf(strength).length() == 2) {
+                            Log.d(TAG, "Sende Nachricht: " + 0 + 0 + angle + " " + 0 + strength);
+                            try {
+                                int data = Integer.valueOf(String.valueOf(angle) + 0 + strength);
+                                stream_out.write(angle);
+                                stream_out.write(strength);
+                                System.out.println(angle);
+                            } catch (IOException e) {
+                                Log.e(TAG,
+                                        "Bluetest: Exception beim Senden: " + e.toString());
+                            }
+                        }
+
+                        if(String.valueOf(angle).length() == 2 && String.valueOf(strength).length() == 1) {
+                            Log.d(TAG, "Sende Nachricht: " + 0 + angle + " " + 0 + 0 + strength);
+                            try {
+                                int data = Integer.valueOf(String.valueOf(angle) + 0 + 0 + strength);
+                                stream_out.write(angle);
+                                stream_out.write(strength);
+                                System.out.println(angle);
+
+                            } catch (IOException e) {
+                                Log.e(TAG,
+                                        "Bluetest: Exception beim Senden: " + e.toString());
+                            }
+                        }
+
+                        if(String.valueOf(angle).length() == 3 && String.valueOf(strength).length() == 1) {
+                            Log.d(TAG, "Sende Nachricht: " + angle + " " + 0 + 0 + strength);
+                            try {
+                                int data = Integer.valueOf(String.valueOf(angle) + 0 + 0 + strength);
+                                stream_out.write(angle);
+                                stream_out.write(strength);
+                                System.out.println(angle);
+
+                            } catch (IOException e) {
+                                Log.e(TAG,
+                                        "Bluetest: Exception beim Senden: " + e.toString());
+                            }
+                        }
+
+                        if(String.valueOf(angle).length() == 1 && String.valueOf(strength).length() == 3) {
+                            Log.d(TAG, "Sende Nachricht: " + 0 + 0 + angle + " " +  strength);
+                            try {
+                                int data = Integer.valueOf(String.valueOf(angle) + strength);
+                                stream_out.write(angle);
+                                stream_out.write(strength);
+                                System.out.println(angle);
+                            } catch (IOException e) {
+                                Log.e(TAG,
+                                        "Bluetest: Exception beim Senden: " + e.toString());
+                            }
+                        }
+
+                    } else {       */                                                                 // Genau 3 Ziffern für Winkel und 3 für Beweglichkeit
+
+
+                           try {
+                                if(angle > 255) {
+                                    stream_out.write(255);
+                                    Log.d(TAG, "Sende Gradzahl: " + angle);
+                                } else {
+                                    stream_out.write(angle);
+                                    Log.d(TAG, "Sende Gradzahl: " + angle);
+                                }
+
+                                stream_out.write(strength);
+                                Log.d(TAG, "Sende Geschwindigkeit: " + strength);
+
+                            } catch (IOException e) {
+                                Log.e(TAG,
+                                        "Bluetest: Exception beim Senden: " + e.toString());
+                            }
+
+
+
+//                    Utils.delay(1, new Utils.DelayCallback() {
+//                        @Override
+//                        public void afterDelay() {
+//                            System.out.println("Delayed by 1000 millisecond!");
+//
+//                            try {
+//                                if(angle > 255) {
+//                                    stream_out.write(255);
+//                                    Log.d(TAG, "Sende Gradzahl: " + angle);
+//                                } else {
+//                                    stream_out.write(angle);
+//                                    Log.d(TAG, "Sende Gradzahl: " + angle);
+//
+//                                }
+//
+//                                stream_out.write(strength);
+//                                Log.d(TAG, "Sende Geschwindigkeit: " + strength);
+//                                for(int i= 0; i< 1000000; i++ ){
+//                                    continue;
+//                                }
+//
+//
+//                            } catch (IOException e) {
+//                                Log.e(TAG,
+//                                        "Bluetest: Exception beim Senden: " + e.toString());
+//                            }
+//
+//                        }
+//                    });
+                }
 
             }
         });
 
-        scroller.setOnTouchListener(new View.OnTouchListener() {
+/*        scroller.setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
                 return false;
             }
-        });
+        });*/
 
+        enter_mac.setOnEditorActionListener((v, actionId, event) -> {
+            showDevices();
+            return true;
+        });
     }
 
 
@@ -297,6 +451,9 @@ public class findArduino extends AppCompatActivity implements NavigationView.OnN
         return enabled;
     }
 
+    /**
+     * Anzeigen aller Bluetooth-Geräte in der Umgebung
+     */
     private void showDevices(){
         StringBuilder sb = new StringBuilder();
         sb.append(getString(R.string.paired));
@@ -418,7 +575,7 @@ public class findArduino extends AppCompatActivity implements NavigationView.OnN
         if (is_connected) {
             Log.d(TAG, "Sende Nachricht: " + direction);
             try {
-                stream_out.write(1);
+                stream_out.write(direction);
             } catch (IOException e) {
                 Log.e(TAG,
                         "Bluetest: Exception beim Senden: " + e.toString());
